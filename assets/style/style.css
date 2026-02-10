@@ -54,7 +54,7 @@ aside div:nth-of-type(2) ol:first-of-type li a {
 
 /* ESERCIZIO 9) Crea un selettore per selezionare il secondo <li> della lista del terzo blog post */
 .blog-post:nth-of-type(3)>ul>li:nth-of-type(2) {
-    color: rgb(103, 237, 103)
+    color: rgb(103, 237, 103);
 }
 
 /* ESERCIZIO 10) Crea un selettore per selezionare il link "Torna su" che trovi a fondo pagina nell'angolo in basso a destra */
