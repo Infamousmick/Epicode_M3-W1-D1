@@ -25,7 +25,7 @@
 /* ESERCIZIO 5) Crea un selettore per selezionare l'<hr> del primo blog post e colorarlo di rosso */
 
 .blog-post:first-of-type hr {
-    background-color: red;
+    border-color: red;
 }
 
 /* ESERCIZIO 6) Crea un selettore per selezionare i link pari della navbar */
@@ -36,8 +36,9 @@
 
 /* ESERCIZIO 7) Crea un selettore per selezionare tutti gli <li> della prima "ordered-list" della sidebar ("Archivio") */
 
-aside div:nth-of-type(2) ol:first-of-type li a {
-    color: gray;
+aside div:nth-of-type(2) ol:first-of-type li {
+    background-color: gray;
+    margin: 2px 0;
 }
 
 /* ESERCIZIO 8) Crea un selettore per selezionare l'autore del secondo blog post */
@@ -46,11 +47,6 @@ aside div:nth-of-type(2) ol:first-of-type li a {
     background-color: rgba(69, 254, 161, 0.718);
 }
 
-/* ESERCIZIO 11) Crea un selettore per selezionare il bottone "Nuovi" che trovi in basso */
-.blog-pagination>a:last-of-type {
-    border: 1px solid red;
-    color: red;
-}
 
 /* ESERCIZIO 9) Crea un selettore per selezionare il secondo <li> della lista del terzo blog post */
 .blog-post:nth-of-type(3)>ul>li:nth-of-type(2) {
@@ -60,6 +56,12 @@ aside div:nth-of-type(2) ol:first-of-type li a {
 /* ESERCIZIO 10) Crea un selettore per selezionare il link "Torna su" che trovi a fondo pagina nell'angolo in basso a destra */
 footer+a {
     background-color: lightblue;
+}
+
+/* ESERCIZIO 11) Crea un selettore per selezionare il bottone "Nuovi" che trovi in basso */
+.blog-pagination>a:last-of-type {
+    border: 1px solid red;
+    color: red;
 }
 
 /* ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer */

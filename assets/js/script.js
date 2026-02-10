@@ -13,11 +13,13 @@ window.addEventListener("load", () => {
 });
 
 // EXTRA Crea con JavaScript la funzionalità per rimuovere il corrispondente elemento padre dal DOM cliccando sul link "Continua a leggere".
-let continuaElement = document.querySelector(
-  ".jumbotron>div>p:nth-of-type(2)>a",
+let continuaElement = document.querySelectorAll(
+  "body>div:first-of-type>.row a",
 );
-continuaElement.addEventListener("click", () => {
-  continuaElement.parentElement.remove();
+continuaElement.forEach((elemento) => {
+  elemento.addEventListener("click", () => {
+    elemento.parentElement.parentElement.remove();
+  });
 });
 
 // EXTRA Crea con JavaScript la funzionalità per creare un alert col nome dell'autore ogni volta che il cursore passa sopra l'autore del post.
